@@ -26,13 +26,10 @@ function Cta({ cta, ghost }) {
 }
 
 function Slot({ id, src, placeholder, className, style }) {
-  return React.createElement("image-slot", {
-    id: "slot-" + id,
-    src: src || undefined,
-    placeholder: placeholder || "Glissez une image",
-    className,
-    style,
-  });
+  if (!src) {
+    return <div className={"img-ph" + (className ? " " + className : "")} style={style} aria-label={placeholder} />;
+  }
+  return <img id={"slot-" + id} src={src} alt={placeholder || ""} className={className} style={style} />;
 }
 
 /* ---------- ÉDITO --------------------------------------------------------- */

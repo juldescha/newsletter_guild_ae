@@ -233,7 +233,7 @@ window.NEWSLETTER = {
       title: "Les prochains rendez-vous",
       intro: "Événements, ateliers et sessions de formation à venir. Pingez les contacts pour participer.",
       rows: [
-        { event: "Communauté Analytics", how: "Communauté AE", contact: "Emilie Herr · Kevin Bouré" },
+        { event: "Communauté Analytics", how: "Communauté AE", contact: "Emilie He · Kevin Boure" },
         { event: "Kickoff Track 3", how: "Inscription Slack", contact: "Gaylor Brunner" },
       ],
     },

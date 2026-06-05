@@ -303,9 +303,15 @@ html, body { margin: 0; padding: 0; }
 .stat-label { margin-top: 8px; font-size: 13.5px; color: var(--ink-soft); line-height: 1.35; }
 .stats-notes { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
 .stats-media { margin-top: 24px; }
-.stats-media image-slot {
+.stats-media img {
   display: block; width: 100%; aspect-ratio: 21 / 8;
   border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--line);
+  object-fit: cover;
+}
+.stats-media .img-ph {
+  display: block; width: 100%; aspect-ratio: 21 / 8;
+  border-radius: var(--radius-lg); border: 1px dashed var(--line);
+  background: var(--paper-2, rgba(0,0,0,.04));
 }
 
 /* ==========================================================================
@@ -341,10 +347,15 @@ html, body { margin: 0; padding: 0; }
 .spotlight-grid.rev { grid-template-columns: 0.82fr 1fr; }
 .spotlight-media { position: relative; }
 .spotlight-grid.rev .spotlight-media { order: -1; }
-.spotlight image-slot {
+.spotlight-media img {
   display: block; width: 100%; aspect-ratio: 4/3;
   border-radius: var(--radius-lg); overflow: hidden;
-  border: 1px solid var(--line);
+  border: 1px solid var(--line); object-fit: cover;
+}
+.spotlight-media .img-ph {
+  display: block; width: 100%; aspect-ratio: 4/3;
+  border-radius: var(--radius-lg); border: 1px dashed var(--line);
+  background: var(--paper-2, rgba(0,0,0,.04));
 }
 .media-cap {
   margin-top: 10px; font-family: var(--font-mono); font-size: 11.5px;
@@ -423,11 +434,18 @@ html, body { margin: 0; padding: 0; }
   display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px;
 }
 .person { text-align: center; }
-.person image-slot {
+.person img {
   display: block; width: 100%; aspect-ratio: 1; margin-bottom: 12px;
   border-radius: 50%; overflow: hidden; border: 2px solid var(--accent);
+  object-fit: cover;
 }
-.paper[data-theme="signal"] .person image-slot { border-color: var(--line-strong); }
+.person .img-ph {
+  display: block; width: 100%; aspect-ratio: 1; margin-bottom: 12px;
+  border-radius: 50%; border: 2px dashed var(--accent);
+  background: var(--paper-2, rgba(0,0,0,.04));
+}
+.paper[data-theme="signal"] .person img { border-color: var(--line-strong); }
+.paper[data-theme="signal"] .person .img-ph { border-color: var(--line-strong); }
 .person-name { font-family: var(--font-display); font-weight: 600; font-size: 17px; margin: 0; }
 .paper[data-theme="convivial"] .person-name { font-weight: 700; }
 .person-role { font-family: var(--font-mono); font-size: 11.5px; color: var(--ink-mute); margin: 3px 0 0; letter-spacing: .02em; }
