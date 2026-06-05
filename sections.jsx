@@ -25,9 +25,10 @@ function Cta({ cta, ghost }) {
   );
 }
 
-function Slot({ id, placeholder, className, style }) {
+function Slot({ id, src, placeholder, className, style }) {
   return React.createElement("image-slot", {
     id: "slot-" + id,
+    src: src || undefined,
     placeholder: placeholder || "Glissez une image",
     className,
     style,
@@ -58,7 +59,7 @@ function Stats({ s }) {
       {s.intro && <p className="lead">{s.intro}</p>}
       {s.imageId && (
         <div className="stats-media">
-          <Slot id={s.imageId} placeholder={s.imageCaption || "Photo de l'événement"} />
+          <Slot id={s.imageId} src={s.src} placeholder={s.imageCaption || "Photo de l'événement"} />
           {s.imageCaption && <div className="media-cap">{s.imageCaption}</div>}
         </div>
       )}
@@ -109,7 +110,7 @@ function Spotlight({ s, reversed }) {
           </div>
         </div>
         <div className="spotlight-media">
-          <Slot id={s.imageId || s.id} placeholder={s.imageCaption || "Photo / capture"} />
+          <Slot id={s.imageId || s.id} src={s.src} placeholder={s.imageCaption || "Photo / capture"} />
           {s.imageCaption && <div className="media-cap">{s.imageCaption}</div>}
         </div>
       </div>
@@ -192,7 +193,7 @@ function People({ s }) {
       <div className="people-grid">
         {(s.items || []).map((p, i) => (
           <div className="person" key={i}>
-            <Slot id={p.imageId || ("welcome-" + i)} placeholder="Photo" />
+            <Slot id={p.imageId || ("welcome-" + i)} src={p.src} placeholder="Photo" />
             <p className="person-name">{p.name}</p>
             <p className="person-role">{p.role}</p>
           </div>
