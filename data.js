@@ -51,6 +51,7 @@ window.NEWSLETTER = {
       intro: "Bravo à tous ! Retour en chiffres sur la promo qui vient de boucler le track.",
 
       imageId: "certifs-img",
+      src: "images/062026-Remise diplome.jpg",
       imageCaption: "Cérémonie de remise BING — 27/05/2026",
       stats: [
         { value: "45", label: "inscrits" },
@@ -106,6 +107,7 @@ window.NEWSLETTER = {
         "Focus sur le groupe de Théau, Fodié et Meirkhan pour leur réalisation d'un agent branché sur la couche sémantique de Looker, permettant de communiquer en langage naturel avec la donnée.",
       ],
       imageId: "talk-my-data-img",
+      src: "images/062026-theau.jpg",
       cta: [
         { label: "Voir le replay", href: "https://drive.google.com/open?id=1yh1vu2TN-fFK921a55zdP1DWisOZMUK7" },
         { label: "Repo GitHub", href: "https://github.com/Converteo/bing-batch-2-all-repos/tree/main/bing-batch2-group10" },
@@ -126,6 +128,7 @@ window.NEWSLETTER = {
         "Le pitch : un agent analytics pluggé sur des contextes définis, qui se déploie directement sur vos infrastructures.",
       ],
       imageId: "nao-agent-img",
+      src: "images/062026-Nao.jpg",
       imageCaption: "Special Guest — Claire Gouze (Nao Agent)",
       badge: "100% Open Source",
       cta: { label: "Soutenir le projet sur GitHub", href: "https://docs.google.com/presentation/u/0/d/1aTXGjSBYWPx0KaSxJ5CpBsFhtBLkiPnaSCW8ildEQK8/edit" },
@@ -215,9 +218,9 @@ window.NEWSLETTER = {
       eyebrow: "Bienvenue !",
       title: "Ils rejoignent la communauté",
       items: [
-        { name: "Alexis OUARAB", role: "CS Analytics Engineer", imageId: "welcome-1" },
-        { name: "Sabrina HASSAIM", role: "C Analytics Engineer", imageId: "welcome-2" },
-        { name: "Aymeric BESCOS", role: "C Analytics Engineer", imageId: "welcome-3" },
+        { name: "Alexis OUARAB", role: "CS Analytics Engineer", imageId: "welcome-1", src: "images/062026-alexis.png" },
+        { name: "Sabrina HASSAIM", role: "C Analytics Engineer", imageId: "welcome-2", src: "images/062026-sabrina.png" },
+        { name: "Aymeric BESCOS", role: "C Analytics Engineer", imageId: "welcome-3", src: "images/062026-aymeric.png" },
       ],
     },
 
