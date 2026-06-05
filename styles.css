@@ -563,21 +563,16 @@ html, body { margin: 0; padding: 0; }
 }
 .editing .sec-wrap.is-off .sec-off-tag { display: block; }
 
-/* ---------- ORGANIZER (floating editor toggle) --------------------------- */
-.organizer {
-  position: fixed; left: 22px; bottom: 22px; z-index: 9000;
-  display: flex; gap: 10px; align-items: center;
-}
-.org-toggle, .org-reset {
-  font-family: "Public Sans", system-ui, sans-serif; font-weight: 600; font-size: 14px;
-  border: 1px solid #d8d3c8; background: #fff; color: #1A1613;
-  padding: 11px 16px; border-radius: 999px; cursor: pointer;
+/* ---------- BOUTON DARK MODE ---------------------------------------------- */
+.darkmode-btn {
+  position: fixed; bottom: 22px; right: 22px; z-index: 9000;
+  width: 44px; height: 44px; border-radius: 50%; border: 1px solid #d8d3c8;
+  background: #fff; font-size: 20px; cursor: pointer;
   box-shadow: 0 8px 24px -10px rgba(0,0,0,.4);
-  transition: transform .12s ease, background .12s ease;
+  transition: transform .12s ease;
+  display: flex; align-items: center; justify-content: center;
 }
-.org-toggle:hover, .org-reset:hover { transform: translateY(-1px); }
-.org-toggle.on { background: var(--brand-accent); color: #fff; border-color: var(--brand-accent); }
-.org-reset { background: #1A1613; color: #fff; border-color: #1A1613; font-weight: 500; }
+.darkmode-btn:hover { transform: translateY(-2px); }
 
 /* ==========================================================================
    RESPONSIVE
