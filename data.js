@@ -16,7 +16,7 @@ window.NEWSLETTER = {
     title: "Analytics Engineer",
     org: "Converteo · Hub Tech",
     edition: "Juin 2026",
-    issue: "Édition #08",
+    issue: "Édition #01",
     footer: {
       links: [
         { label: "#hub-tech", href: "https://converteo.slack.com/archives/C0AQV8TV1PS" },
@@ -38,7 +38,7 @@ window.NEWSLETTER = {
         "Ces dernières semaines ont été rythmées par les ponts de mai mais surtout par l'implication de tous dans les projets internes ! Un grand merci pour votre dynamisme.",
         "Ce mois-ci, focus sur la montée en compétence sur les sujets de BI Next Gen, nos projets clients, et les premiers pas très prometteurs de la guild AE vers les sujets d'Agentic BI — parfaitement illustrés par la récente démo sur la BI Next Gen !",
       ],
-      signature: "L'équipe Hub Tech",
+      signature: "La guild Analytics Engineering",
     },
 
     /* ---------- HIGHLIGHT CHIFFRÉ : CERTIFS ------------------------------- */
@@ -216,7 +216,7 @@ window.NEWSLETTER = {
       type: "people",
       enabled: true,
       eyebrow: "Bienvenue !",
-      title: "Ils rejoignent la communauté",
+      title: "Ils rejoignent la Guild",
       items: [
         { name: "Alexis OUARAB", role: "CS Analytics Engineer", imageId: "welcome-1", src: "images/062026-alexis.png" },
         { name: "Sabrina HASSAIM", role: "C Analytics Engineer", imageId: "welcome-2", src: "images/062026-sabrina.png" },
